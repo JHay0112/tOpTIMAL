@@ -36,6 +36,7 @@ body, html {
         opacity: 1;
     } to {
         opacity: 0;
+        z-index: 1;
     }
 }
 
@@ -49,9 +50,17 @@ body, html {
 
 @keyframes background-zoom {
     from {
-        background-size: 100%;
+        transform: scale(1);
     } to {
-        background-size: 105%;
+        transform: scale(1.05);
+    }
+}
+
+@keyframes slide-in-left {
+    from {
+        left: -100%;
+    } to {
+        left: 0%;
     }
 }
 
@@ -100,13 +109,52 @@ hr {
     opacity: 0.2;
 }
 
+/* Nav */
+
+nav {
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    background-color: #231f20;
+    z-index: 2;
+    padding-top: 10px;
+    width: 70px;
+    z-index: 1;
+}
+
+nav a {
+    color: RGBA(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-size: 25pt;
+    margin: 15px;
+    transition: 0.2s ease all;
+    display: block;
+}
+
+nav a:hover {
+    color: RGBA(255, 255, 255, 0.9);
+}
+
+nav a.active {
+    color: RGBA(255, 255, 255, 0.9);
+}
+
+nav a.active:hover {
+    color: RGBA(255, 255, 255, 0.9);
+    cursor: default;
+}
+
+/* Main */
+
+main {
+    animation: fade-in 1.2s 1s forwards;
+    z-index: 2;
+}
+
 /* Loading */
 
 #loading-screen {
-    animation: fade-in 0s forwards;
     background-color: #231f20;
-    animation-iteration-count: 1;
-    opacity: 1;
     position: absolute;
     top: 0;
     left: 0;
@@ -126,24 +174,56 @@ hr {
     margin-top: -25px;
 }
 
-/* Index */
-
 /* Background image */
-main.index {
-    animation: fade-in 1.2s 1s forwards, background-zoom 1.5s 1s forwards;
-    background-image: url(../img/cover.jpg);
+
+#background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: background-zoom 1.5s 1.2s forwards;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center top;
-    display: flex;
+    background-position: center center;
     height: 100vh; /* 100% height of viewport */
-    background-color: ghostwhite; /* If image doesn't load fast enough */
-    justify-content: center;
-    align-items: center;
+    width: 100vw;
     margin: 0;
+    z-index: 0;
+    overflow: hidden;
 }
 
-img.logo {
-    animation: fade-in 2s 4s forwards;
-    opacity: 0;
+/* Index */
+
+/* Index Background image */
+#background-image.index {
+    background-image: url(../img/cover.jpg);
+}
+
+/* Footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    padding: 0;
+    max-width: 50vw;
+    width: 387px; /* Matches footer img width */
+    text-align: right;
+    z-index: 1;
+}
+
+footer img {
+    margin: 0;
+    margin-bottom: -5px;
+    padding: 5px;
+    width: 100%;
+    background-color: #231f20;
+}
+
+footer small, footer small a {
+    background-color: #231f20;
+    margin: 0;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
 }

@@ -14,17 +14,25 @@
     </head>
     <body onload="exitLoadingScreen()">
 
-        <nav>
-            <a href=""></a>
-        </nav>
-
         <div id="loading-screen">
             <img id="loading-spinner" src="img/favicon.png" alt="Loading Spinner" />
         </div>
 
+        <nav id="page-nav">
+            <a href="#home" class="fas fa-home active"></a>
+            <a href="#home" class="fas fa-home"></a>
+        </nav>
+
+        <div id="background-image" class="index"></div>
+
         <main class="index">
             <!-- <img src="img/logo.png" class="index logo" /> -->
         </main>
+
+        <footer>
+            <img class="col-12" src="img/logo.png" alt="tOpTIMAL Logo" />
+            <small class="col-12">Site built by <a href="https://jordanhay.tk/" target="_blank">Jordan Hay</a> <span class="desktop-only">||</span><br class="mobile-only" /> &copy; 2019 tOpTIMAL Ltd.</small>
+        </footer>
 
         <!-- Scripts -->
         <script src="js/main.js"></script> <!-- General site script (loading screen js etc) -->
