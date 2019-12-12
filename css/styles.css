@@ -117,7 +117,7 @@ nav {
     height: 100vh;
     background-color: #231f20;
     z-index: 2;
-    width: 60px;
+    width: 50px;
     z-index: 1;
     text-align: center;
 }
@@ -125,10 +125,10 @@ nav {
 nav a {
     color: RGBA(255, 255, 255, 0.5);
     text-decoration: none;
-    font-size: 25pt;
+    font-size: 22pt;
     margin: 0;
     width: 100%;
-    padding: 20px 0px;
+    padding: 15px 0px;
     transition: 0.3s ease all;
     display: block;
     text-align: center;
@@ -144,7 +144,7 @@ nav a.active {
 }
 
 nav a.active:hover {
-    color: RGBA(255, 255, 255, 0.9);
+    color: #231f20;
     cursor: default;
 }
 
@@ -184,10 +184,9 @@ main {
     position: fixed;
     top: 0;
     left: 0;
-    animation: background-zoom 1.5s 1.25s forwards;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     height: 100vh; /* 100% height of viewport */
     width: 100vw;
     margin: 0;
