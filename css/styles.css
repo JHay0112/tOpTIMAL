@@ -117,8 +117,7 @@ nav {
     height: 100vh;
     background-color: #231f20;
     z-index: 2;
-    padding-top: 10px;
-    width: 70px;
+    width: 60px;
     z-index: 1;
     text-align: center;
 }
@@ -127,7 +126,9 @@ nav a {
     color: RGBA(255, 255, 255, 0.5);
     text-decoration: none;
     font-size: 25pt;
-    margin: 15px;
+    margin: 0;
+    width: 100%;
+    padding: 20px 0px;
     transition: 0.3s ease all;
     display: block;
     text-align: center;
@@ -138,7 +139,8 @@ nav a:hover {
 }
 
 nav a.active {
-    color: RGBA(255, 255, 255, 0.9);
+    color: #231f20;
+    background-color: RGBA(255, 255, 255, 0.9);
 }
 
 nav a.active:hover {
