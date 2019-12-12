@@ -191,7 +191,7 @@ main {
     left: 0;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left bottom;
     height: 100vh; /* 100% height of viewport */
     width: 100vw;
     margin: 0;
@@ -207,12 +207,14 @@ main {
 }
 
 #home-page h1 {
-    background-color: white;
-    font-size: 5vh;
+    text-align: center;
+    color: white;
+    font-size: 5vw;
+    font-stretch: ultra-condensed;
+    max-width: 100vw;
     padding: 20px;
     margin: 0;
     margin-bottom: 20px;
-    display: table;
 }
 
 /* Footer */
