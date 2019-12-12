@@ -1,0 +1,149 @@
+@charset "UTF-8"; /* Set charset UTF-8 */
+
+/* 
+    css/styles.css
+    Author: Jordan Hay
+*/
+
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap'); 
+
+/* Every Element (Ones below will overide if need be) */
+* {
+    font-family: 'Open Sans', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Animations */
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes background-zoom {
+    from {
+        background-size: 100%;
+    } to {
+        background-size: 105%;
+    }
+}
+
+/* Responsive */
+
+/* Mobile */
+[class*="col-"] {
+    width: 100%;
+    float: left;
+    padding: 5px;
+}
+
+.mobile-only {
+    display: inline-block;
+}
+
+.desktop-only {
+    display: none;
+}
+  
+/* Desktop */
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .mobile-only {display: none;}
+    .desktop-only {display: inline-block;}
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Horizontal Line */
+hr {
+    opacity: 0.2;
+}
+
+/* Loading */
+
+#loading-screen {
+    animation: fade-in 0s forwards;
+    background-color: #231f20;
+    animation-iteration-count: 1;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+}
+
+#loading-spinner {
+    animation: spin 1s infinite linear;
+    position: relative;
+    left: 50vw;
+    top: 50vh;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    margin-top: -25px;
+}
+
+/* Index */
+
+/* Background image */
+main.index {
+    animation: fade-in 1.2s 1s forwards, background-zoom 1.5s 1s forwards;
+    background-image: url(../img/cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    display: flex;
+    height: 100vh; /* 100% height of viewport */
+    background-color: ghostwhite; /* If image doesn't load fast enough */
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+img.logo {
+    animation: fade-in 2s 4s forwards;
+    opacity: 0;
+}
