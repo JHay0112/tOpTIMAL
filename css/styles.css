@@ -58,8 +58,10 @@ body, html {
 
 @keyframes slide-in-left {
     from {
+        position: relative;
         left: -100%;
     } to {
+        position: relative;
         left: 0%;
     }
 }
@@ -114,6 +116,7 @@ hr {
 nav {
     position: fixed;
     left: 0;
+    top: 0;
     height: 100vh;
     background-color: #231f20;
     z-index: 2;
@@ -153,6 +156,8 @@ nav a.active:hover {
 main {
     animation: fade-in 1.2s 1s forwards;
     z-index: 2;
+    margin-left: 50px; /* Nav offset */
+    padding: 20px;
 }
 
 /* Loading */
@@ -199,6 +204,15 @@ main {
 /* Index Background image */
 #background-image.index {
     background-image: url(../img/cover.jpg);
+}
+
+#home-page h1 {
+    background-color: white;
+    font-size: 5vh;
+    padding: 20px;
+    margin: 0;
+    margin-bottom: 20px;
+    display: table;
 }
 
 /* Footer */
