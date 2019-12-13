@@ -193,7 +193,6 @@ nav a.active:hover span.nav-text {
 /* Main */
 
 main {
-    animation: fade-in 1.2s 1s forwards;
     z-index: 2;
     margin: 0;
     padding: 0;
