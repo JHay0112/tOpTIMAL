@@ -325,6 +325,7 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(../img/tasmine_palmer.jpg);
+    margin: 20px;
 }
 
 .palmer-pic.mobile-only {
