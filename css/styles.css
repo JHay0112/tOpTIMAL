@@ -19,6 +19,7 @@
 body, html {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 /* Animations */
@@ -193,8 +194,22 @@ nav a.active:hover span.nav-text {
 main {
     animation: fade-in 1.2s 1s forwards;
     z-index: 2;
-    margin-left: 50px; /* Nav offset */
+    margin: 0;
+    padding: 0;
+    margin-left: 60px; /* Nav offset */
     padding: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+
+#side-img {
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -5px;
+    left: -5px;
 }
 
 /* Loading */
@@ -262,6 +277,12 @@ main {
     width: 10vw;
     bottom: 22%;
     margin-left: 67vw;
+}
+
+/* Online Training */
+
+#side-img.online {
+    background-image: url(../img/cover.jpg);
 }
 
 /* Footer */
