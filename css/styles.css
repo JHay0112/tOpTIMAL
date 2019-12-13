@@ -38,7 +38,7 @@ body, html {
         opacity: 1;
     } to {
         opacity: 0;
-        z-index: 1;
+        z-index: -1;
     }
 }
 
@@ -109,7 +109,7 @@ hr {
 }
 
 p {
-    font-size: 13pt;
+    font-size: 14pt;
 }
 
 /* Header */
