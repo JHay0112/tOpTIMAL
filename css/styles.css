@@ -335,6 +335,7 @@ footer {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     padding: 5px;
+    z-index: 5;
     text-align: center;
 }
 
