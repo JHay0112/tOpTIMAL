@@ -232,7 +232,9 @@ main {
 
 #subpage-content hr {
     height: 8px;
-    width: 40vw;
+    width: 70%;
+    margin-right: 30%;
+    margin-bottom: 30px;
     color: #231f20;
     background-color: #231f20;
     opacity: 1;
