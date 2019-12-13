@@ -314,6 +314,23 @@ main {
     margin-left: 67vw;
 }
 
+/* About */
+
+#palmer-container {
+    display: flex;
+}
+
+.palmer-pic.desktop-only {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/tasmine_palmer.jpg);
+}
+
+.palmer-pic.mobile-only {
+    height: auto;
+}
+
 /* Online Training */
 
 #side-img.online {
