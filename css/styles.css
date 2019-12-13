@@ -155,17 +155,20 @@ nav a.active:hover {
 nav a span.nav-text {
     position: relative;
     top: -30px;
-    left: -100vw;
-    transition: 0.2s ease all;
+    left: -150vw;
+    transition: 0.7s ease all;
     padding: 10px;
     background-color: #231f20;
     color: white;
     white-space: nowrap;
+    font-weight: normal;
     z-index: -1;
+    font-size: 20pt;
 }
 
 nav a:hover span.nav-text {
     left: 100%;
+    transition: 0.3s ease all;
 }
 
 nav a.active:hover span.nav-text {
