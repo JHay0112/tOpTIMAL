@@ -243,7 +243,7 @@ main {
     background-image: url(../img/cover.jpg);
 }
 
-#home-page img.desktop-only {
+#slogan {
     position: fixed;
     width: 30vw;
     bottom: 27%;
@@ -254,7 +254,14 @@ main {
     position: relative;
     max-width: 70vw;
     margin: 0 auto;
-    top: 9vh;
+    top: 30vh;
+}
+
+#atp {
+    position: fixed;
+    width: 10vw;
+    bottom: 22%;
+    margin-left: 67vw;
 }
 
 /* Footer */
