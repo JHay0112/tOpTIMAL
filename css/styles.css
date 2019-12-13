@@ -142,10 +142,9 @@ nav a {
     color: RGBA(255, 255, 255, 0.5);
     background-color: #231f20;
     text-decoration: none;
-    font-size: 22pt;
-    margin: 0;
+    font-size: 20pt;
     width: 100%;
-    padding: 15px 0px;
+    padding-top: 15px;
     transition: 0.3s ease all;
     display: block;
     text-align: center;
@@ -167,7 +166,7 @@ nav a.active:hover {
 
 nav a span.nav-text {
     position: relative;
-    top: -32px;
+    top: -27px;
     left: -150vw;
     transition: 0.7s ease all;
     padding: 7px;
