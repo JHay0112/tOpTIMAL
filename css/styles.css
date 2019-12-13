@@ -108,6 +108,10 @@ hr {
     opacity: 0.2;
 }
 
+p {
+    font-size: 15pt;
+}
+
 /* Header */
 
 header.index {
