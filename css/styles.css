@@ -6,11 +6,11 @@
 */
 
 /* Import Fonts */
-@import url('https://fonts.googleapis.com/css?family=Roboto'); 
+@import url('https://fonts.googleapis.com/css?family=Jaldi'); 
 
 /* Every Element (Ones below will overide if need be) */
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Jaldi', sans-serif;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -166,14 +166,14 @@ nav a.active:hover {
 
 nav a span.nav-text {
     position: relative;
-    top: -31px;
+    top: -32px;
     left: -150vw;
     transition: 0.7s ease all;
-    padding: 14px;
+    padding: 7px;
     background-color: #231f20;
     color: white;
     white-space: nowrap;
-    font-weight: normal;
+    font-weight: bold;
     z-index: -1;
     font-size: 20pt;
 }
