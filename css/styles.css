@@ -332,6 +332,10 @@ main {
     height: auto;
 }
 
+#side-img.about {
+    background-image: url(../img/about.jpg);
+}
+
 /* Online Training */
 
 #side-img.online {
