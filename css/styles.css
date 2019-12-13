@@ -243,6 +243,10 @@ main {
     float: left;
 }
 
+#subpage-content img {
+    padding: 20px;
+}
+
 /* Loading */
 
 #loading-screen {
