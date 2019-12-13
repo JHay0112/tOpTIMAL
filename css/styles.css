@@ -354,6 +354,42 @@ main {
     background-image: url(../img/abel_tasman.jpg);
 }
 
+/* Testimonials */
+
+.testimonial-container {
+    display: flex;
+    margin-bottom: 40px;
+    border-radius: 3px;
+    padding: 0;
+    padding-left: 10px;
+    border: 1px solid #231f20;
+}
+
+.testimonial-container section {
+    margin: 20px;
+    margin-left: 0;
+}
+
+.testominal-pic.desktop-only {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.testominal-pic.mobile-only {
+    height: auto;
+}
+
+#elaine {
+    background-image: url(../img/elaine.jpg);
+    background-position: top;
+}
+
+#holly {
+    background-image: url(../img/holly.jpg);
+    background-position: 70% 35%;
+}
+
 /* Footer */
 
 footer {
