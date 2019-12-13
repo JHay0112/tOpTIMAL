@@ -390,6 +390,12 @@ main {
     background-position: 70% 35%;
 }
 
+#side-img.testimonials {
+    background-image: url(../img/testimonials.jpg);
+    background-position: center;
+}
+
+
 /* Footer */
 
 footer {
