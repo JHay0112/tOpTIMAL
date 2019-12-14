@@ -73,13 +73,13 @@ body, html {
     from {
         background-position: center center;
     } to {
-        background-position: -100vw center;
+        background-position: 250% center;
     }
 }
 
 @keyframes slideshow-slide-in {
     from {
-        background-position: 100vw center;
+        background-position: -150% center;
     } to {
         background-position: center center;
     }
