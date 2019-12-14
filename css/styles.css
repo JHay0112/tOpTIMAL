@@ -437,6 +437,19 @@ input[type=submit]:hover {
     transition: 0.3s ease;
 }
 
+#logos.contact {
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#logos.contact #atp-logo, #logos.contact #toptimal-logo {
+    max-width: 60vw;
+    max-height: 10vh;
+    margin: 0;
+    padding: 0;
+}
+
 /* Footer */
 
 footer {
