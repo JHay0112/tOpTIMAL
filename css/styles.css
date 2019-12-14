@@ -316,11 +316,16 @@ main {
     margin-left: 13vw;
 }
 
+main.index {
+    height: 100vh;
+}
+
 #home-page img.mobile-only {
     position: relative;
+    top: 30vh;
     max-width: 70vw;
     margin: 0 auto;
-    top: 30vh;
+    height: 100%;
 }
 
 #atp {
