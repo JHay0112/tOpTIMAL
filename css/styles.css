@@ -69,6 +69,22 @@ body, html {
     }
 }
 
+@keyframes slideshow-slide-out {
+    from {
+        background-position: center center;
+    } to {
+        background-position: -100vw center;
+    }
+}
+
+@keyframes slideshow-slide-in {
+    from {
+        background-position: 100vw center;
+    } to {
+        background-position: center center;
+    }
+}
+
 /* Responsive */
 
 /* Mobile */
@@ -396,6 +412,10 @@ main {
 #holly {
     background-image: url(../img/holly.jpg);
     background-position: 70% 35%;
+}
+
+#side-img.testimonials {
+    background-position: center center;
 }
 
 /* Contact */
