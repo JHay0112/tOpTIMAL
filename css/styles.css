@@ -73,13 +73,13 @@ body, html {
     from {
         background-position: center center;
     } to {
-        background-position: 250% center;
+        background-position: -100vw center;
     }
 }
 
 @keyframes slideshow-slide-in {
     from {
-        background-position: -150% center;
+        background-position: 100vw center;
     } to {
         background-position: center center;
     }
@@ -326,8 +326,8 @@ main {
 #atp {
     position: fixed;
     width: 10vw;
-    bottom: 22%;
-    margin-left: 67vw;
+    bottom: 20%;
+    margin-left: 65vw;
 }
 
 /* About */
@@ -406,7 +406,7 @@ main {
 
 #elaine {
     background-image: url(../img/elaine.jpg);
-    background-position: top;
+    background-position: 40% top;
 }
 
 #holly {
@@ -416,6 +416,11 @@ main {
 
 #side-img.testimonials {
     background-position: center center;
+}
+
+.test-attr {
+    width: 100%;
+    text-align: right;
 }
 
 /* Contact */
