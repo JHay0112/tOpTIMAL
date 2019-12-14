@@ -355,7 +355,7 @@ main {
 /* Online Training */
 
 #side-img.online {
-    background-image: url(../img/cover.jpg);
+    background-image: url(../img/online-training.jpg);
 }
 
 /* Keto */
@@ -364,17 +364,22 @@ main {
     background-image: url(../img/keto.jpg);
 }
 
+/* Blog */
+
+#side-img.blog {
+    background-image: url(../img/blog.jpg);
+}
+
 /* Services */
 
 #side-img.services {
     background-image: url(../img/abel_tasman.jpg);
 }
 
-
 /* Vacancies */
 
 #side-img.vacancies {
-    background-image: url(../img/vacancies.jpg);
+    background-image: url(../img/heaphy.jpg);
     background-position: center;
 }
 
