@@ -37,11 +37,11 @@ async function runSlideShow() {
         if(i >= images.length) {
             i = 0;
         }
-        sideImg.style.animation = "slideshow-slide-out 0.3s forwards";
-        await sleep(300);
+        sideImg.style.animation = "slideshow-slide-out 2s forwards";
+        await sleep(2000);
         sideImg.style.backgroundImage = "url(\"img/".concat(images[i], "\")");
-        sideImg.style.animation = "slideshow-slide-in 0.3s forwards";
-        await sleep(5000);
+        sideImg.style.animation = "slideshow-slide-in 2s forwards";
+        await sleep(8000);
     }
 
 }
