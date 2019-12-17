@@ -218,18 +218,41 @@ main {
     padding: 20px;
 }
 
-#side-img {
-    margin: 0;
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: fixed;
-    top: 0;
-    left: 30px;
+/* Side IMG Mobile */
+@media only screen and (max-width: 768px) {
+    #side-img {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 130px;
+    }
+
+    #subpage-content {
+        position: relative;
+        padding: 20px;
+        padding-top: 130px;
+    }
+}
+
+/* Side IMG desktop */
+@media only screen and (min-width: 768px) {
+    #side-img {
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: fixed;
+        left: 30px;
+        top: 0;
+    }
 }
 
 #subpage-content {
-    padding: 20px;
+    /* padding: 20px; */
     margin: 0;
     margin-bottom: 100px;
     float: right;
@@ -322,7 +345,7 @@ main.index {
 
 #home-page img.mobile-only {
     position: relative;
-    top: 20vh;
+    top: 15vh;
     max-width: 70vw;
     margin: 0 auto;
     height: 100%;
