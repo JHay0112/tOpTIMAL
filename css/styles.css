@@ -252,7 +252,7 @@ main {
 }
 
 #subpage-content {
-    /* padding: 20px; */
+    padding: 20px;
     margin: 0;
     margin-bottom: 100px;
     float: right;
