@@ -235,7 +235,7 @@ main {
     #subpage-content {
         position: relative;
         padding: 20px;
-        padding-top: 140px;
+        padding-top: 150px;
     }
 }
 
@@ -249,13 +249,13 @@ main {
         left: 30px;
         top: 0;
     }
-}
 
-#subpage-content {
-    padding: 20px;
-    margin: 0;
-    margin-bottom: 100px;
-    float: right;
+    #subpage-content {
+        padding: 20px;
+        margin: 0;
+        margin-bottom: 100px;
+        float: right;
+    }
 }
 
 #subpage-content h1 {
