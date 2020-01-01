@@ -33,3 +33,5 @@
         <header>
             <img src="img/logo.png" alt="Logo" />
         </header>
+
+        <?php include("nav.php") ?>
