@@ -12,7 +12,7 @@
 ?>
 
 <main class="row">
-    <aside class="col-5" id="side-img" style="background-image: url('img/abel_tasman.jpg')"></aside>
+    <aside class="col-5" id="side-img" style="background-image: url('img/online-training.jpg')"></aside>
     <div class="col-5"></div>
     <section id="subpage-content" class="col-7">
         <h1 class="desktop-only">Coming Soon</h1>
