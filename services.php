@@ -42,7 +42,7 @@
             <h5>Duration varies • Price varies</h5>
             <p>Workshops, professional learning opportunities and optimal coaching specifically aimed at Educators who wish to improve their lifestyle or for education workplaces that want to increase staff wellness and participation.</p>
 
-            <h2>ketOPTIMAL Coaching</h2>
+            <h2>KetOPTIMAL Coaching</h2>
             <h5>Duration varies • Price varies</h5>
             <p>KETOGENIC lifestyle training and coaching, mentoring and motivation. Ditching carbs ain’t hard! </p>
         </section>
