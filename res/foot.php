@@ -7,7 +7,7 @@
 
 ?>
         <footer>
-            <small>Site built by <a href="https://jordanhay.tk/" target="_blank">Jordan Hay</a> <span class="desktop-only">||</span><br class="mobile-only" /> &copy; 2019 tOpTIMAL Ltd.</small>
+            <small>Site built by <a href="https://jordanhay.tk/" target="_blank">Jordan Hay</a> <span class="desktop-only">||</span><br class="mobile-only" /> &copy; 2020 tOpTIMAL Ltd.</small>
         </footer>
 
         <!-- Scripts -->
