@@ -30,8 +30,4 @@
             <img id="loading-spinner" src="img/favicon.png" alt="Loading Spinner" />
         </div>
 
-        <header>
-            <img src="img/logo.png" alt="Logo" />
-        </header>
-
         <?php include("nav.php") ?>

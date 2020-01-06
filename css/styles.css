@@ -19,6 +19,9 @@
 body, html {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    margin-left: 30px;
+    margin-right: 10px;
 }
 
 /* Animations */
@@ -82,12 +85,17 @@ body, html {
     }
 }
 
-/* Responsive */
-
 /* Mobile */
-[class*="col-"], .row {
+[class*="col-"] {
     width: 100%;
     float: left;
+    padding: 5px;
+}
+
+.row {
+    display: block;
+    padding: 0;
+    margin: 0;
 }
 
 .mobile-only {
@@ -111,7 +119,11 @@ body, html {
     .col-9 {width: 75%;}
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
+    .col-12, .row {width: 100%;}
+    .row {
+        display: flex;
+        flex-flow: row;
+    }
     .mobile-only {display: none;}
     .desktop-only {display: inline-block;}
 }
@@ -218,6 +230,97 @@ nav a.active:hover span.nav-text {
     left: 100%;
     background-color: #e9e9e9;
     color: #231f20;
+}
+
+/* Main */
+
+main {
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Supbage mobile */
+@media only screen and (max-width: 768px) {
+    #side-img {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 130px;
+    }
+
+    #subpage-content {
+        position: relative;
+        padding: 20px;
+        padding-top: 150px;
+        margin-bottom: 150px;
+    }
+}
+
+/* Subpage desktop */
+@media only screen and (min-width: 768px) {
+    #side-img {
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: fixed;
+        left: 30px;
+        top: 0;
+    }
+
+    #subpage-content {
+        padding: 20px;
+        margin: 0;
+        margin-bottom: 100px;
+        float: right;
+    }
+}
+
+#subpage-content h1 {
+    margin: 0;
+    padding-top: 0;
+}
+
+#subpage-content h1.desktop-only {
+    font-size: 50pt;
+}
+
+#subpage-content h1.mobile-only {
+    font-size: 20pt;
+}
+
+#subpage-content hr {
+    height: 8px;
+    width: 70%;
+    margin-right: 30%;
+    margin-bottom: 30px;
+    color: #231f20;
+    background-color: #231f20;
+    opacity: 1;
+    float: left;
+}
+
+#subpage-content img {
+    padding: 20px;
+}
+
+/* About Page */
+
+.palmer-pic.desktop-only {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/tasmine_palmer.jpg);
+    margin: 20px;
+}
+
+.palmer-pic.mobile-only {
+    height: auto;
 }
 
 /* Footer */
