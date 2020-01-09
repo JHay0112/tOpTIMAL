@@ -309,6 +309,50 @@ main {
     padding: 20px;
 }
 
+/* Index */
+
+/* Index Background image */
+#background-image.index {
+    background-image: url(../img/cover.jpg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60% bottom;
+    height: 100vh; /* 100% height of viewport */
+    width: 100vw;
+    margin: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+#slogan {
+    position: fixed;
+    width: 30vw;
+    bottom: 27%;
+    margin-left: 13vw;
+}
+
+main.index {
+    height: 100vh;
+}
+
+#home-page img.mobile-only {
+    position: relative;
+    top: 15vh;
+    max-width: 70vw;
+    margin: 0 auto;
+    height: 100%;
+}
+
+#atp {
+    position: fixed;
+    width: 10vw;
+    bottom: 20%;
+    margin-left: 65vw;
+}
+
 /* About Page */
 
 .palmer-pic.desktop-only {
