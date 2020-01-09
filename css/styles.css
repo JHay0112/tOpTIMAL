@@ -12,7 +12,6 @@
 * {
     font-family: 'Jaldi', sans-serif;
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -26,11 +25,28 @@ body, html {
 
 /* Animations */
 
+@-webkit-keyframes fade-in {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
 @keyframes fade-in {
     from {
         opacity: 0;
     } to {
         opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade-out {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+        z-index: -1;
     }
 }
 
@@ -43,19 +59,53 @@ body, html {
     }
 }
 
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    } to {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+
 @keyframes spin {
     from {
-        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
     } to {
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes background-zoom {
+    from {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    } to {
+        -webkit-transform: scale(1.05);
+                transform: scale(1.05);
     }
 }
 
 @keyframes background-zoom {
     from {
-        transform: scale(1);
+        -webkit-transform: scale(1);
+                transform: scale(1);
     } to {
-        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+    }
+}
+
+@-webkit-keyframes slide-in-left {
+    from {
+        position: relative;
+        left: -100%;
+    } to {
+        position: relative;
+        left: 0%;
     }
 }
 
@@ -69,11 +119,27 @@ body, html {
     }
 }
 
+@-webkit-keyframes slideshow-slide-out {
+    from {
+        background-position: center center;
+    } to {
+        background-position: -100vw center;
+    }
+}
+
 @keyframes slideshow-slide-out {
     from {
         background-position: center center;
     } to {
         background-position: -100vw center;
+    }
+}
+
+@-webkit-keyframes slideshow-slide-in {
+    from {
+        background-position: 100vw center;
+    } to {
+        background-position: center center;
     }
 }
 
@@ -121,8 +187,13 @@ body, html {
     .col-11 {width: 91.66%;}
     .col-12, .row {width: 100%;}
     .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-flow: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row;
+                flex-flow: row;
     }
     .mobile-only {display: none;}
     .desktop-only {display: inline-block;}
@@ -141,7 +212,8 @@ body, html {
 }
 
 #loading-spinner {
-    animation: spin 1s infinite linear;
+    -webkit-animation: spin 1s infinite linear;
+            animation: spin 1s infinite linear;
     position: relative;
     left: 50vw;
     top: 50vh;
@@ -188,6 +260,8 @@ nav a {
     font-size: 20pt;
     width: 100%;
     padding-top: 15px;
+    -webkit-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
     transition: 0.3s ease all;
     display: block;
     text-align: center;
@@ -211,6 +285,8 @@ nav a span.nav-text {
     position: relative;
     top: -27px;
     left: -150vw;
+    -webkit-transition: 0.7s ease all;
+    -o-transition: 0.7s ease all;
     transition: 0.7s ease all;
     padding: 7px;
     background-color: #231f20;
@@ -223,6 +299,8 @@ nav a span.nav-text {
 
 nav a:hover span.nav-text {
     left: 100%;
+    -webkit-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
     transition: 0.3s ease all;
 }
 
@@ -370,6 +448,8 @@ main.index {
 /* Testimonials */
 
 .testimonial-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 40px;
     border-radius: 3px;
@@ -421,7 +501,8 @@ input[type=text], input[type=email], textarea[type=text], select {
     display: inline-block;
     border: 1px solid lightgray;
     border-radius: 4px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin-left: 0;
     resize: none;
     font-size: 11.5pt;
@@ -437,12 +518,16 @@ input[type=submit] {
     cursor: pointer;
     margin-left: 0;
     margin-bottom: 0;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
     transition: 0.3s ease;
     background-color: RGBA(0, 0, 0, 0.85);
 }
 
 input[type=submit]:hover {
     opacity: 0.9;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
     transition: 0.3s ease;
 }
 
