@@ -283,12 +283,13 @@ nav a.active:hover {
 
 nav a span.nav-text {
     position: relative;
-    top: -27px;
+    top: -25px;
     left: -150vw;
     -webkit-transition: 0.7s ease all;
     -o-transition: 0.7s ease all;
     transition: 0.7s ease all;
-    padding: 7px;
+    padding: 8px;
+    padding-bottom: 7px;
     background-color: #231f20;
     color: white;
     white-space: nowrap;
