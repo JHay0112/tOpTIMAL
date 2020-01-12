@@ -5,6 +5,32 @@
         Author: Jordan Hay
     */
 
+    // Used to return the URL, allows this to not need changing if domain gets changed
+    function getHost() {
+        return($_SERVER["HTTP_HOST"]);
+    }
+
+    // Used to print out a post
+    function generatePost() {
+
+        $post = $GLOBALS["post"];
+
+        print("<article class='col-12 blog-post'>");
+        print("<h2>".$post["post_title"]."</h2>");
+        print("<h3>Written by: ".$post["post_author"]."</h3>");
+        print("<p>Published: ".$post["post_publish_date"]."</p>");
+        print("<hr />");
+        print("<p>".$post["post_content"]."</p>");
+        print("<hr />");
+        print("<aside class='share-blog'>");
+        print("<h5>Share: </h5>");
+        print("<a href='https://www.facebook.com/sharer/sharer.php?u=".getHost()."/blog?post=".$post["post_id"]."' target='_blank' class='fab fa-facebook'></a>");
+        print("<a href='https://twitter.com/intent/tweet?text=".getHost()."/blog?post=".$post["post_id"]."' target='_blank' class='fab fa-twitter'></a>");
+        print("<a href='https://www.reddit.com/submit?url=".getHost()."/blog?post=".$post["post_id"]."' target='_blank' class='fab fa-reddit'></a>");
+        print("</aside>");
+        print("</article>");
+    }
+
     $title = "Blog";
     $posts_to_load = 10;
     $posts_loaded = 0;
@@ -43,13 +69,7 @@
                     $posts = $link->query($sql);
 
                     while($post = $posts->fetch_assoc()) {
-                        print("<article class='col-12 blog-post'>");
-                        print("<h2>".$post["post_title"]."</h2>");
-                        print("<h3>Written by: ".$post["post_author"]."</h3>");
-                        print("<p>Published: ".$post["post_publish_date"]."</p>");
-                        print("<hr />");
-                        print("<p>".$post["post_content"]."</p>");
-                        print("</article>");
+                        generatePost();
                         $posts_loaded++;
                     }
                 } catch(\Exception $e) {
@@ -80,13 +100,7 @@
                 $post = $post->fetch_assoc();
 
                 if($post["post_title"] != "") {
-                    print("<article class='col-12 blog-post'>");
-                    print("<h2>".$post["post_title"]."</h2>");
-                    print("<h3>Written by: ".$post["post_author"]."</h3>");
-                    print("<p>Published: ".$post["post_publish_date"]."</p>");
-                    print("<hr />");
-                    print("<p>".$post["post_content"]."</p>");
-                    print("</article>");
+                    generatePost();
                 } else {
                     print("<article class='col-12 blog-post'>");
                     print("<h2>Something went wrong!</h2>");

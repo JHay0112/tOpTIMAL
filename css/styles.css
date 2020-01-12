@@ -461,6 +461,26 @@ main.index {
     height: 1px !important;
 }
 
+.share-blog {
+    margin-top: -20px;
+    margin-bottom: -15px;
+    padding: 5px;
+}
+
+.share-blog a {
+    position: relative;
+    top: -15px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    font-size: 15pt;
+    margin-right: 10px;
+}
+
+.share-blog a:hover {
+    opacity: 0.8;
+}
+
 /* Blog navigation buttons */
 a.navigate-result-buttons {
     text-decoration: none;
