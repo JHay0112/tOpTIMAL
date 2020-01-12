@@ -446,6 +446,45 @@ main.index {
     height: auto;
 }
 
+/* Blog */
+
+.blog-post {
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0px 5px 5px #231f20;
+    background-color: #231f20;
+    color: white;
+}
+
+.blog-post hr {
+    width: 100% !important;
+    height: 1px !important;
+}
+
+/* Blog navigation buttons */
+a.navigate-result-buttons {
+    text-decoration: none;
+    color: RGBA(0, 0, 0, 0.7);
+    transition: all ease 0.2s;
+}
+
+a.navigate-result-buttons span {
+    position: relative;
+    top: 1px;
+}
+
+a.navigate-result-buttons:hover {
+    color: RGBA(0, 0, 0, 0.9);
+}
+
+a.navigate-result-buttons#next-page-button {
+    float: left;
+}
+
+a.navigate-result-buttons#next-page-button {
+    float: right;
+}
+
 /* Testimonials */
 
 .testimonial-container {
