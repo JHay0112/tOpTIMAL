@@ -419,10 +419,10 @@ main.index {
 
 #home-page img.mobile-only {
     position: relative;
+    left: 10px;
     top: 15vh;
     max-width: 70vw;
     margin: 0 auto;
-    height: 100%;
 }
 
 #atp {
